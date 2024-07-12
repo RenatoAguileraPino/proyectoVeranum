@@ -9,6 +9,7 @@ $(document).ready(function () {
         var academi = $("#validationCustom07").val(); //validar vacio
         var email = $("#validationCustom06").val(); //validar vacio
         var contra = $("#validationCustom05").val(); //validar vacio
+        var errorIDk = $("#validationCustom09").val(); //validar vacio
 
                 //validar Nombre
                 if(nombre == '' ){
@@ -78,10 +79,23 @@ $(document).ready(function () {
                     var flag6 = true;
                 }
 
+                //validar Id numero
+                if(isNaN(errorIDk)){
+                                
+                $("#errorID").css("visibility", "visible").css("color", "red").text("Sólo se aceptan numeros");
+                
+                }else if(errorIDk == '' ){
+                    $("#errorID").css("visibility", "visible").css("color", "red").text("Tienes rellenar este campo");
+                }
+                else{
+                    $("#errorID").css("visibility", "visible").css("color", "green").text("Es un numero");
+                    var flag7 = true;
+                }
+            
 
 
-                if(flag && flag1 && flag2 && flag3 && flag4 && flag5 && flag6 ) { // comparo que esten llenos (true or false)
-                    window.location.href = 'inicioCliente.html'; //mando al ususario al link
+                if(flag && flag1 && flag2 && flag3 && flag4 && flag5 && flag6 && flag7) { // comparo que esten llenos (true or false)
+                    window.location.href = 'inicioEmpleado.html'; //mando al ususario al link
                   }
     });
 });

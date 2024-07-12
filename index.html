@@ -45,7 +45,7 @@
                 <form class="d-flex" role="button">
                     <!-- Botón usuario -->
                     <button type="button" class="btn btn-light"  data-bs-toggle="modal" data-bs-target="#inicioSesion">
-                        Iniciar seción
+                        Iniciar sesión
                     </button>
                 </form>
             </div>
@@ -127,7 +127,7 @@
           </nav>
     </div>
     
-<!-- Modal inicio seccion -->
+<!-- Modal inicio seccion 1 -->
 <div class="modal fade" id="inicioSesion" tabindex="-1" aria-labelledby="inicioSesionLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -135,13 +135,13 @@
                 <h1 class="modal-title fs-5" id="inicioSesionLabel">Iniciar sesion</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <form id="loginForm" action="login" method="post">
+            <form id="loginForm" action="inicioCliente.html" method="post">
                 
                 <div class="modal-body">
                     <div class="mb-3 row">
                         <label for="staticEmail" class="col-sm-2 col-form-label">Correo:</label>
                         <div class="col-sm-10">
-                            <input id="txtCorreo" name="username" type="username" class="form-control" required>
+                            <input id="txtCorreo" name="username" type="email" class="form-control" required>
                         </div>
                     </div>
                     <div class="mb-3 row">
@@ -152,11 +152,12 @@
                     </div>
                     <div class="col-12">
                         <div class="link">
-                            <p>No tienes cuenta <a class="link-offset-3" href="{% url 'registro' %}">registrate</a> aqui.</p>
+                            <p>No tienes cuenta <a class="link-offset-3" href="registro_cliente.html">registrate</a> aqui.</p>
                         </div>
                     </div>
                 </div>
                 <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#inicioSesion2" >Iniciar como Administrador</button>
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                     <input id="btnEnviar" value="Iniciar sesión" type="submit" class="btn btn-primary">
                 </div>
@@ -168,6 +169,55 @@
             
         </div>
     </div>
+</div>
+
+<!-- Modal inicio seccion 2 -->
+<div class="modal fade" id="inicioSesion2" tabindex="-1" aria-labelledby="inicioSesionLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h1 class="modal-title fs-5" id="inicioSesionLabel">Iniciar sesion</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <form id="loginForm" action="inicioEmpleado.html8" method="post">
+              
+              <div class="modal-body">
+                  <div class="mb-3 row">
+                      <label for="staticEmail" class="col-sm-2 col-form-label">Correo:</label>
+                      <div class="col-sm-10">
+                          <input id="txtCorreo" type="email" class="form-control" required>
+                      </div>
+                  </div>
+                  <div class="mb-3 row">
+                      <label for="inputPassword" class="col-sm-2 col-form-label">Contraseña:</label>
+                      <div class="col-sm-10">
+                          <input id="inputPassword" name="password" type="password" class="form-control" required>
+                      </div>
+                  </div>
+                  <div class="mb-3 row">
+                    <label for="staticEmail" class="col-sm-2 col-form-label">ID:</label>
+                    <div class="col-sm-10">
+                        <input id="txtid" name="id" type="number" class="form-control" required>
+                    </div>
+                </div>
+                  <div class="col-12">
+                      <div class="link">
+                          <p>No tienes cuenta <a class="link-offset-3" href="registro_veranum.html">registrate</a> aqui.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <input id="btnEnviar" value="Iniciar sesión" type="submit" class="btn btn-primary">
+              </div>
+          </form>
+      </div>
+  </div>
+</div>
+
+          
+      </div>
+  </div>
 </div>
 
 
