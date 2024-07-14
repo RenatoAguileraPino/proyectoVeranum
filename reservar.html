@@ -11,6 +11,10 @@
     <title>Veranum.cl</title>
     
     <style>
+        td{
+
+            padding: 10px 20px;
+        }
         .ele-per {
             background-color: #ffc107!important; 
             color: black; 
@@ -83,32 +87,121 @@
                 <div class="row mt-5 gx-3">
                     <!-- Lado izquierdo del carrito -->
                     <div class="col-md-12 col-lg-8 col-11 mx-auto main_cart mb-lg-0 mb-5 shadow">
-                         <!--Cantidad de productos -->
-                        <h2 class="py-4 fw-bold"></h2>
-
                         <!-- Tarjeta de producto -->
                         <div class="card p-4">
-                            <div class="row">
-                                <!-- Imagen del producto -->
-                                <div class="col-md-5 col-11 mx-auto bg-light d-flex justify-content-center align-items-center shadow product_img">
-
-                                    <img src="{{ item.imagen }}" class="img-fluid" alt="Imagen del producto">
-                                    <span>Imagen no disponible</span>
-
-                                </div>
-                               
-                                <!-- Detalles del producto -->
-                                <div class="col-md-7 col-11 mx-auto px-4 mt-2">
-                                    <div class="row">
-                                        <!-- Nombre y características del producto -->
-                                        <div class="col-6 ma">
-                                            <h2 class="mb-4"></h2>
-                                            <p class="mb-2"></p>
-                                            <p class="mb-2"></p>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="table-responsive">
+                                
+                                <table id="Grid" style="display: inline;">
+   
+                                    <thead >
+                                        <tr>
+                                            <th data-field="Data1" data-sortable="true" >____Piso____</th>
+                                            <th data-field="Data2" data-sortable="true" ></th>
+                                            <th data-field="Data2" data-sortable="true" >_____________</th>
+                                            <th data-field="Data2" data-sortable="true" >_Habitaciones_</th>
+                                            <th data-field="Data2" data-sortable="true" >_____________</th>
+                                        </tr>
+                                    </thead>                       
+                                    <tbody>
+                                        <tr>
+                                          <td style="border-right:gray 1px solid ;"><input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked >
+                                            <label class="btn btn-outline-primary" for="btnradio1">Piso 6</label></td>
+                                          <td><input type="radio" class="btn-check" name="btnradion" id="btnradio21" autocomplete="off">
+                                            <label class="btn btn-outline-primary" for="btnradio21">601 </label></td>
+                                          <td><input type="radio" class="btn-check" name="btnradion" id="btnradio31" autocomplete="off">
+                                            <label class="btn btn-outline-primary" for="btnradio31">602 </label></td>
+                                          <td><input type="radio" class="btn-check" name="btnradion" id="btnradio41" autocomplete="off">
+                                            <label class="btn btn-outline-primary" for="btnradio41">603 </label></td>
+                                          <td><input type="radio" class="btn-check" name="btnradion" id="btnradio51" autocomplete="off">
+                                            <label class="btn btn-outline-primary" for="btnradio51">604 </label></td>
+                                            <td><input type="radio" class="btn-check" name="btnradion" id="btnradio5533" autocomplete="off">
+                                                <label class="btn btn-outline-primary" for="btnradio5533">605 </label></td>
+                                            <td><input type="radio" class="btn-check" name="btnradion" id="btnradio5543" autocomplete="off">
+                                                <label class="btn btn-outline-primary" for="btnradio5543">606 </label></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border-right:gray 1px solid ;"><input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" checked>
+                                              <label class="btn btn-outline-primary" for="btnradio2">Piso 5</label></td>
+                                            <td><input type="radio" class="btn-check" name="btnradion" id="btnradio22" autocomplete="off">
+                                              <label class="btn btn-outline-primary" for="btnradio22">501 </label></td>
+                                            <td><input type="radio" class="btn-check" name="btnradion" id="btnradio32" autocomplete="off">
+                                              <label class="btn btn-outline-primary" for="btnradio32">502 </label></td>
+                                            <td><input type="radio" class="btn-check" name="btnradion" id="btnradio42" autocomplete="off">
+                                              <label class="btn btn-outline-primary" for="btnradio42">503</label></td>
+                                            <td><input type="radio" class="btn-check" name="btnradion" id="btnradio52" autocomplete="off">
+                                              <label class="btn btn-outline-primary" for="btnradio52">504</label></td>
+                                              <td><input type="radio" class="btn-check" name="btnradion" id="btnradio5531" autocomplete="off">
+                                                <label class="btn btn-outline-primary" for="btnradio5531">505 </label></td>
+                                            <td><input type="radio" class="btn-check" name="btnradion" id="btnradio5541" autocomplete="off">
+                                                <label class="btn btn-outline-primary" for="btnradio5541">506 </label></td>
+                                          </tr>
+                                          <tr>
+                                            <td style="border-right:gray 1px solid ;"><input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" checked>
+                                              <label class="btn btn-outline-primary" for="btnradio3">Piso 4</label></td>
+                                            <td><input type="radio" class="btn-check" name="btnradion" id="btnradio23" autocomplete="off">
+                                              <label class="btn btn-outline-primary" for="btnradio23">401 </label></td>
+                                            <td><input type="radio" class="btn-check" name="btnradion" id="btnradio33" autocomplete="off">
+                                              <label class="btn btn-outline-primary" for="btnradio33">402 </label></td>
+                                            <td><input type="radio" class="btn-check" name="btnradion" id="btnradio43" autocomplete="off">
+                                              <label class="btn btn-outline-primary" for="btnradio43">403 </label></td>
+                                            <td><input type="radio" class="btn-check" name="btnradion" id="btnradio53" autocomplete="off">
+                                              <label class="btn btn-outline-primary" for="btnradio53">404 </label></td>
+                                              <td><input type="radio" class="btn-check" name="btnradion" id="btnradio5534" autocomplete="off">
+                                                <label class="btn btn-outline-primary" for="btnradio5534">405 </label></td>
+                                            <td><input type="radio" class="btn-check" name="btnradion" id="btnradio5544" autocomplete="off">
+                                                <label class="btn btn-outline-primary" for="btnradio5544">406 </label></td>
+                                          </tr>
+                                          <tr>
+                                            <td style="border-right:gray 1px solid ;"><input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off" checked>
+                                              <label class="btn btn-outline-primary" for="btnradio4">Piso 3</label></td>
+                                            <td><input type="radio" class="btn-check" name="btnradion" id="btnradio24" autocomplete="off">
+                                              <label class="btn btn-outline-primary" for="btnradio24">301 </label></td>
+                                            <td><input type="radio" class="btn-check" name="btnradion" id="btnradio34" autocomplete="off">
+                                              <label class="btn btn-outline-primary" for="btnradio34">302 </label></td>
+                                            <td><input type="radio" class="btn-check" name="btnradion" id="btnradio44" autocomplete="off">
+                                              <label class="btn btn-outline-primary" for="btnradio44">303 </label></td>
+                                            <td><input type="radio" class="btn-check" name="btnradion" id="btnradio54" autocomplete="off">
+                                              <label class="btn btn-outline-primary" for="btnradio54">304 </label></td>
+                                              <td><input type="radio" class="btn-check" name="btnradion" id="btnradio5537" autocomplete="off">
+                                                <label class="btn btn-outline-primary" for="btnradio5537">305 </label></td>
+                                            <td><input type="radio" class="btn-check" name="btnradion" id="btnradio5547" autocomplete="off">
+                                                <label class="btn btn-outline-primary" for="btnradio5547">306 </label></td>
+                                          </tr>
+                                          <tr>
+                                            <td style="border-right:gray 1px solid ;"><input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off" checked>
+                                              <label class="btn btn-outline-primary" for="btnradio5">Piso 2</label></td>
+                                            <td><input type="radio" class="btn-check" name="btnradion" id="btnradio25" autocomplete="off">
+                                              <label class="btn btn-outline-primary" for="btnradio25">201</label></td>
+                                            <td><input type="radio" class="btn-check" name="btnradion" id="btnradio35" autocomplete="off">
+                                              <label class="btn btn-outline-primary" for="btnradio35">202</label></td>
+                                            <td><input type="radio" class="btn-check" name="btnradion" id="btnradio45" autocomplete="off">
+                                              <label class="btn btn-outline-primary" for="btnradio45">203 </label></td>
+                                            <td><input type="radio" class="btn-check" name="btnradion" id="btnradio55" autocomplete="off">
+                                              <label class="btn btn-outline-primary" for="btnradio55">204 </label></td>
+                                            <td><input type="radio" class="btn-check" name="btnradion" id="btnradio553" autocomplete="off">
+                                                <label class="btn btn-outline-primary" for="btnradio553">205 </label></td>
+                                            <td><input type="radio" class="btn-check" name="btnradion" id="btnradio554" autocomplete="off">
+                                                <label class="btn btn-outline-primary" for="btnradio554">206 </label></td>
+                                          </tr>
+                                          <tr>
+                                            <td style="border-right:gray 1px solid ;"><input type="radio" class="btn-check" name="btnradio" id="btnradio6" autocomplete="off" checked>
+                                              <label class="btn btn-outline-primary" for="btnradio6">Piso 1</label></td>
+                                            <td><input type="radio" class="btn-check" name="btnradion" id="btnradio26" autocomplete="off">
+                                              <label class="btn btn-outline-primary" for="btnradio26">101</label></td>
+                                            <td><input type="radio" class="btn-check" name="btnradion" id="btnradio36" autocomplete="off">
+                                              <label class="btn btn-outline-primary" for="btnradio36">102</label></td>
+                                            <td><input type="radio" class="btn-check" name="btnradion" id="btnradio46" autocomplete="off">
+                                              <label class="btn btn-outline-primary" for="btnradio46">103</label></td>
+                                            <td><input type="radio" class="btn-check" name="btnradion" id="btnradio56" autocomplete="off">
+                                              <label class="btn btn-outline-primary" for="btnradio56">104</label></td>
+                                              <td><input type="radio" class="btn-check" name="btnradion" id="btnradio5539" autocomplete="off">
+                                                <label class="btn btn-outline-primary" for="btnradio5539">105 </label></td>
+                                            <td><input type="radio" class="btn-check" name="btnradion" id="btnradio5549" autocomplete="off">
+                                                <label class="btn btn-outline-primary" for="btnradio5549">106 </label></td>
+                                          </tr>
+                                          
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
